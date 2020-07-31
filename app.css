@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 20px;
+
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #00001c;
+    transition: .3s ease box-shadow;
+    border-radius: 10px;
+}
+
+.container div:hover {
+    box-shadow: 0px 0px 60px 0px #00001f;
+    ;
+}
+
+
+.container h2 {
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+.arrow img {
+    width: 200px;
+}
+
+.arrow {
+    background-color: transparent !important;
+    padding: 0 100px !important;
+    box-shadow: 0px 0px 0px 0px #00001c !important;
+    cursor: default !important;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 3em;
+}
+
+.overlay.hide {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .arrow {
+        padding: 50px 0 !important;
+        transform: rotate(90deg);
+    }
+}
